@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B74116AA2569830200F1FEB8 /* FoodItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74116A92569830200F1FEB8 /* FoodItem.swift */; };
 		B791D0D52569376C00326A08 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B791D0D42569376C00326A08 /* AppDelegate.swift */; };
 		B791D0D72569376C00326A08 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B791D0D62569376C00326A08 /* ContentView.swift */; };
 		B791D0D92569376C00326A08 /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = B791D0D82569376C00326A08 /* Experience.rcproject */; };
@@ -14,6 +15,9 @@
 		B791D0DE2569376E00326A08 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B791D0DD2569376E00326A08 /* Preview Assets.xcassets */; };
 		B791D0E92569376F00326A08 /* DISTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B791D0E82569376F00326A08 /* DISTests.swift */; };
 		B791D0F42569376F00326A08 /* DISUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B791D0F32569376F00326A08 /* DISUITests.swift */; };
+		B791D105256938BE00326A08 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B791D104256938BE00326A08 /* DataModel.swift */; };
+		B791D11425694A1800326A08 /* ARDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B791D11325694A1800326A08 /* ARDisplayView.swift */; };
+		B791D11925694A4900326A08 /* ARUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B791D11825694A4900326A08 /* ARUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B74116A92569830200F1FEB8 /* FoodItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodItem.swift; sourceTree = "<group>"; };
 		B791D0D12569376C00326A08 /* DIS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DIS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B791D0D42569376C00326A08 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B791D0D62569376C00326A08 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -47,6 +52,9 @@
 		B791D0EF2569376F00326A08 /* DISUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DISUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B791D0F32569376F00326A08 /* DISUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DISUITests.swift; sourceTree = "<group>"; };
 		B791D0F52569376F00326A08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B791D104256938BE00326A08 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		B791D11325694A1800326A08 /* ARDisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARDisplayView.swift; sourceTree = "<group>"; };
+		B791D11825694A4900326A08 /* ARUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +111,10 @@
 				B791D0DA2569376E00326A08 /* Assets.xcassets */,
 				B791D0DF2569376E00326A08 /* Info.plist */,
 				B791D0DC2569376E00326A08 /* Preview Content */,
+				B791D104256938BE00326A08 /* DataModel.swift */,
+				B791D11325694A1800326A08 /* ARDisplayView.swift */,
+				B791D11825694A4900326A08 /* ARUIView.swift */,
+				B74116A92569830200F1FEB8 /* FoodItem.swift */,
 			);
 			path = DIS;
 			sourceTree = "<group>";
@@ -262,8 +274,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B74116AA2569830200F1FEB8 /* FoodItem.swift in Sources */,
 				B791D0D72569376C00326A08 /* ContentView.swift in Sources */,
+				B791D11925694A4900326A08 /* ARUIView.swift in Sources */,
+				B791D105256938BE00326A08 /* DataModel.swift in Sources */,
 				B791D0D52569376C00326A08 /* AppDelegate.swift in Sources */,
+				B791D11425694A1800326A08 /* ARDisplayView.swift in Sources */,
 				B791D0D92569376C00326A08 /* Experience.rcproject in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

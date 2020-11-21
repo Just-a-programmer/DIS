@@ -8,13 +8,45 @@
 import SwiftUI
 
 struct ARUIView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+    @EnvironmentObject var data: DataModel
+    var item1: FoodItem = FoodItem(pname: "Burger", ppic: "Burger")
+    var body: some View
+    {
+        VStack
+        {
+            Text("Welcome To Food AR").font(.system(size: 30))
+            NavigationView
+            {
+                List([item1])
+                {
+                    curItem in ItemCell(item:curItem)
+                }
+                .navigationBarTitle("Menu")
+            }
+            
+        }
     }
 }
 
 struct ARUIView_Previews: PreviewProvider {
     static var previews: some View {
-        ARUIView()
+        ARUIView().environmentObject(DataModel.shared)
     }
 }
+struct ItemCell :View {
+    var item: FoodItem
+    var body: some View
+    {
+        NavigationLink(destination: ARDisplayView())
+        {
+            HStack
+            {
+                Image(item.picture).resizable().frame(width: 100, height: 80)
+                Text(item.name)
+            }
+        }
+    }
+}
+
+
+
