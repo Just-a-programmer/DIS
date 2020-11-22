@@ -17,6 +17,9 @@ struct ContentView : View {
             ARUIView()
     
         }
+        .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
+            .background(Color.red)
+            .edgesIgnoringSafeArea(.all)
     }
 }
 
